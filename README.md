@@ -14,11 +14,11 @@ Slackware Linux prior to use.
 
 SlackOnly supports the following Slackware releases and architectures:
 
- * Slackware 14.1 32 bit [1]
- * Slackware 14.1 64 bit [2]
- * Slackware-current 32 bit [3]
- * Slackware-current 64 bit [4]
- * Custom Packages 64 bit [5]
+ * Slackware 14.1 32 bit [14.1-x86][1]
+ * Slackware 14.1 64 bit [14.1-x86_64][2]
+ * Slackware-current 32 bit [current-x86][3]
+ * Slackware-current 64 bit [current-x86_64][4]
+ * Custom Packages 64 bit [custom-x86_64][5]
 
  [1]: http://packages.slackonly.com/pub/packages/14.1-x86/
  [2]: http://packages.slackonly.com/pub/packages/14.1-x86_64/
@@ -56,10 +56,7 @@ feature__
 
 1.  Install slackpkg+, which is an extension to slackpkg.
 
-    * Download it here:
-
-    > http://www.slakfinder.org/slackpkg+.html
-
+    * [Download slackpkg+ Here](http://www.slakfinder.org/slackpkg+.html)
     * Then in the directory containing slackpkg+, as the root user run
       the following command to install slackpkg+:
 
@@ -99,6 +96,10 @@ feature__
     * Notes:  Be sure to add the same repository and architecture as
       your Slackware installation.  You may run into problems if you add
       the wrong repository.
+    * Further directions can be found in the man page or viewed online
+      in the [slackpkg+ README][6].
+
+[6]: http://slakfinder.org/slackpkg+/src/README
 
 #### Slpkg Usage
 
@@ -117,27 +118,26 @@ feature__
 
 ## SlackOnly Contact and Contributors
 
-* Website: [www.slackonly.com](http://slackonly.com)
+* Web Site: [www.slackonly.com](http://slackonly.com)
 
 * Project Lead:  Panagiotis Nikolaou <hostmaster -at- slackonly [dot] com>
-
 * Contributor:  Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
 
 ## Credits and Thanks
 
-* Patrick Volkerding for Slackware Linux [1]
-* David Spencer for slackrepo [2]
-* zerouno for slackpkg+, a slackpkg extension [3]
-* Eric Hameleers for slackpkg+ directions [4]
-* Dimitris Zlatanidis for slpkg package manager [5]
-* Jason Woodward and Contributors for slapt-get and gslapt [6]
+* Patrick Volkerding for [Slackware Linux][20]
+* David Spencer for [slackrepo][21]
+* zerouno for the slackpkg extension, [slackpkg+][22]
+* Eric Hameleers for [slackpkg+ directions][23]
+* Dimitris Zlatanidis for [slpkg package manager][24]
+* Jason Woodward and Contributors for [slapt-get and gslapt][25]
 
-[1]: http://www.slackware.com/
-[2]: https://idlemoor.github.io/slackrepo/index.html
-[3]: http://www.slakfinder.org/slackpkg+.html
-[4]: http://alien.slackbook.org/blog/introducing-slackpkg-an-extension-to-slackpkg-for-3rd-party-repositories/
-[5]: https://github.com/dslackw/slpkg
-[6]: http://software.jaos.org/
+[20]: http://www.slackware.com/
+[21]: https://idlemoor.github.io/slackrepo/index.html
+[22]: http://www.slakfinder.org/slackpkg+.html
+[23]: http://alien.slackbook.org/blog/introducing-slackpkg-an-extension-to-slackpkg-for-3rd-party-repositories/
+[24]: https://github.com/dslackw/slpkg
+[25]: http://software.jaos.org/
 
 ## Copyright
 
