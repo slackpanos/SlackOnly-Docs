@@ -5,26 +5,28 @@
 ## Introduction
 
 SlackOnly is a third party software repository for Slackware Linux that
-provides binary packages built from SlackBuilds.org (SBo) build scripts.
-The goal is to enable users to install any package from SBo and to do so
-with just a quick download.  SlackOnly also provides meta data that
-supports automatic dependency resolution with certain package managers.
-SlackOnly assumes that users have installed a full installation of
+provides binary packages built from [SlackBuilds.org][1] build scripts.
+The goal is to enable users to install any package from
+[SlackBuilds.org][1] using precompiled binary packages. SlackOnly
+packages contain Metadata that provides dependency information to
+package managers that have the ability to read such information.
+SlackOnly assumes that its users are running a full installation of
 Slackware Linux prior to use.
 
 SlackOnly supports the following Slackware releases and architectures:
 
- * Slackware 14.1 32 bit [14.1-x86][1]
- * Slackware 14.1 64 bit [14.1-x86_64][2]
- * Slackware-current 32 bit [current-x86][3]
- * Slackware-current 64 bit [current-x86_64][4]
- * Custom Packages 64 bit [custom-x86_64][5]
+ * Slackware 14.1 32 bit [14.1-x86][2]
+ * Slackware 14.1 64 bit [14.1-x86_64][3]
+ * Slackware-current 32 bit [current-x86][4]
+ * Slackware-current 64 bit [current-x86_64][5]
+ * Custom 64 bit Packages [custom-x86_64][6]
 
- [1]: http://packages.slackonly.com/pub/packages/14.1-x86/
- [2]: http://packages.slackonly.com/pub/packages/14.1-x86_64/
- [3]: http://panos.slackonly.com/pub/packages/current-x86/
- [4]: http://packages.slackonly.com/pub/packages/current-x86_64/
- [5]: http://packages.slackonly.com/pub/packages/custom-x86_64/
+ [1]: http://slackbuilds.org/
+ [2]: http://packages.slackonly.com/pub/packages/14.1-x86/
+ [3]: http://packages.slackonly.com/pub/packages/14.1-x86_64/
+ [4]: http://panos.slackonly.com/pub/packages/current-x86/
+ [5]: http://packages.slackonly.com/pub/packages/current-x86_64/
+ [6]: http://packages.slackonly.com/pub/packages/custom-x86_64/
 
 
 ## Why should you use SlackOnly?
@@ -155,6 +157,7 @@ SlackOnly on your Slackware installation.
 ## Credits and Thanks
 
 * Patrick Volkerding for [Slackware Linux][20]
+* The [SlackBuilds.org][1] administrators and maintainers
 * David Spencer for [slackrepo][21]
 * zerouno for the slackpkg extension, [slackpkg+][22]
 * Eric Hameleers for the [slackpkg+ directions][23]
