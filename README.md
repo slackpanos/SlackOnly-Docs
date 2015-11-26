@@ -63,32 +63,35 @@ feature__
     * Then in the directory containing slackpkg+, as the root user run
       the following command to install slackpkg+:
 
-    > installpkg slackpkg+*.t?z
+    > root@localhost~# installpkg slackpkg+*.t?z
 
 2.  Add to and edit the appropriate sections of slackpkgplus.conf. This
     file is located in /etc/slackpkg/ and requires root permissions to
     edit it.
 
-    * Change this:
+    * Change this line:
 
     > REPOPLUS=( slackpkgplus restricted alienbob slacky )
 
-    * To this:
+    * To read like this line:
 
     > REPOPLUS=( slackpkgplus restricted alienbob slacky slackonly )
 
-    * Then add SlackOnly to the list of mirrors.
-    * Where RELEASE is either "14.1 or "-current", and ARCH is either
-      x86 or x86_64 architecture
+    * Add SlackOnly to the list of mirrors.
+    * Where RELEASE is either "14.1 or "-current"
+    * Where ARCH is either x86 or x86_64 architecture
 
     > MIRRORPLUS['slackonly']=http://slackonly.com/pub/packages/RELEASE-ARCH/
+
+    * Save your changes to /etc/slackpkg/slackpkgplus.conf
 
 3.  Next run the following commands as root to import the SlackOnly GPG
     key and to update the slackpkg cache with the SlackOnly package
     list.
 
-    > slackpkg update gpg
-    > slackpkg update
+    > root@localhost~# slackpkg update gpg
+
+    > root@localhost~# slackpkg update
 
 4.  You are now ready to use slackpkg with the slackpkg+ extension to
     access the SlackOnly repository of your choice.
