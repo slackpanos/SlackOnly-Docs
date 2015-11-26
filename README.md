@@ -7,7 +7,7 @@
 SlackOnly is a third party software repository for Slackware Linux that
 provides binary packages built from SlackBuilds.org (SBo) build scripts.
 The goal is to enable users to install any package from SBo and to do so
-with just a quick download.  SlackOnly also provides meta date that
+with just a quick download.  SlackOnly also provides meta data that
 supports automatic dependency resolution with certain package managers.
 SlackOnly assumes that users have installed a full installation of
 Slackware Linux prior to use.
@@ -48,7 +48,7 @@ Slackware installation.
  * Install slapt-get
  * Install gslapt and use it with slapt-get
 
-#### SlackOnly with slackpkg+
+#### Slackpkg+ Usage
 
 __Important:  slackpkg+ does not provide automatic dependency
 resolution. Skip down to one of the other package managers for this
@@ -100,22 +100,46 @@ feature__
       your Slackware installation.  You may run into problems if you add
       the wrong repository.
 
-#### SlackOnly with slpkg
+#### Slpkg Usage
 
  (EDIT: Add directions)
 
-#### SlackOnly with slapt-get and gslapt
+#### Slapt-get and Gslapt Usage
 
  (EDIT: Add directions for stand alone slapt-get)
  (EDIT: Add optional direction to include gslapt)
 
 
-## For Developers
+## For Developers and Packagers
 
  (EDIT: Add information for package maintainers)
  (EDIT: Add information discussing depenendcy resolution)
 
-## Contact
+## SlackOnly Contact and Contributors
 
- (EDIT: Add contact of project lead)
- (EDIT: Add additional maintainer names)
+* Website: [www.slackonly.com](http://slackonly.com)
+
+* Project Lead:  Panagiotis Nikolaou <hostmaster -at- slackonly [dot] com>
+
+* Contributor:  Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
+
+## Credits and Thanks
+
+* Patrick Volkerding for Slackware Linux [1]
+* David Spencer for slackrepo [2]
+* zerouno for slackpkg+, a slackpkg extension [3]
+* Eric Hameleers for slackpkg+ directions [4]
+* Dimitris Zlatanidis for slpkg package manager [5]
+* Jason Woodward and Contributors for slapt-get and gslapt [6]
+
+[1]: http://www.slackware.com/
+[2]: https://idlemoor.github.io/slackrepo/index.html
+[3]: http://www.slakfinder.org/slackpkg+.html
+[4]: http://alien.slackbook.org/blog/introducing-slackpkg-an-extension-to-slackpkg-for-3rd-party-repositories/
+[5]: https://github.com/dslackw/slpkg
+[6]: http://software.jaos.org/
+
+## Copyright
+
+* Slackware® is a Registered Trademark of Patrick Volkerding.
+* Linux is a Registered Trademark of Linus Torvalds.
