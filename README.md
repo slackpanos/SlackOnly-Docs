@@ -128,8 +128,8 @@ feature__
 * Patrick Volkerding for [Slackware Linux][20]
 * David Spencer for [slackrepo][21]
 * zerouno for the slackpkg extension, [slackpkg+][22]
-* Eric Hameleers for [slackpkg+ directions][23]
-* Dimitris Zlatanidis for [slpkg package manager][24]
+* Eric Hameleers for the [slackpkg+ directions][23]
+* Dimitris Zlatanidis for the [slpkg package manager][24]
 * Jason Woodward and Contributors for [slapt-get and gslapt][25]
 
 [20]: http://www.slackware.com/
