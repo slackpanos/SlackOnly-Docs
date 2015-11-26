@@ -202,7 +202,7 @@ enumerated.
 ## SlackOnly Contact and Contributors
 
 * Web Site: [www.slackonly.com](http://slackonly.com)
-* Project Lead:  Panagiotis Nikolaou <hostmaster -at- slackonly [dot] com>
+* Project Lead:  Panagiotis Nikolaou "hostmaster -at- slackonly [dot] com"
 * Contributor:  Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
 
 ## Thanks
