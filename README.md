@@ -40,27 +40,23 @@ SlackOnly supports the following Slackware releases and architectures:
 
 ## How to use SlackOnly
 
-There are a variety of ways to enable and use SlackOnly on your
-Slackware installation.
+There is a variety of package managers that will enable you to use
+SlackOnly on your Slackware installation.
 
- * Install slackpkg+
- * Install slpkg
- * Install slapt-get
- * Install gslapt and use it with slapt-get
+ * slackpkg+
+ * slpkg
+ * slapt-get and gslapt
 
 #### Slackpkg+ Usage
 
-__Important:  slackpkg+ does not provide automatic dependency
-resolution. Skip down to one of the other package managers for this
-feature__
+    *This package manager does not offer automatic dependency resolution.*
 
 1.  Install slackpkg+, which is an extension to slackpkg.
 
     * [Download slackpkg+ Here](http://www.slakfinder.org/slackpkg+.html)
-    * Then in the directory containing slackpkg+, as the root user run
-      the following command to install slackpkg+:
+    * As the root user install slackpkg+ with the installpkg command:
 
-    > root@localhost~# installpkg slackpkg+*.t?z
+    > root@localhost:~# installpkg slackpkg+*.t?z
 
 2.  Add to and edit the appropriate sections of slackpkgplus.conf. This
     file is located in /etc/slackpkg/ and requires root permissions to
@@ -86,9 +82,9 @@ feature__
     key and to update the slackpkg cache with the SlackOnly package
     list.
 
-    > root@localhost~# slackpkg update gpg
+    > root@localhost:~# slackpkg update gpg
 
-    > root@localhost~# slackpkg update
+    > root@localhost:~# slackpkg update
 
 4.  You are now ready to use slackpkg with the slackpkg+ extension to
     access the SlackOnly repository of your choice.
@@ -103,7 +99,51 @@ feature__
 
 #### Slpkg Usage
 
- (EDIT: Add directions)
+1.  Download the latest release of slpkg, [here][7]
+
+    *  You can choose between the source code and the binary package.
+       See the [slpkg README][8] for more information about installing from
+       source. We will choose the binary package.  Be sure to download
+       the right architecture
+
+2.  Install slpkg as root with the installpkg command:
+
+    root@sbodev:~# installpkg slpkg*_dsw.t?z
+
+3.  Edit /etc/slpkg/slpkg.conf and change RELEASE to your Slackware
+    release.  If you are using stable Slackware there is nothing to
+    change.  Be sure to save your changes.
+
+    RELEASE=stable
+    or
+    RELEASE=current
+
+4.  Edit /etc/slpkg/repositories.conf and enable the "slonly" repository
+    by uncommenting the line.  Be sure to save your changes.
+
+    # slonly
+    to
+    slonly
+
+5.  Run the following command to synchronize the package lists:
+
+    slpkg update
+
+6.  You are now ready to start using slpkg to manage your SlackOnly
+    binary packages.  Install your first package by telling slpkg to use
+    the SlackOnly repository and then by supplying a package name.
+
+    slpkg -s slonly <package>
+
+7.  See the slpkg man page or run the help command for more information
+    about slpkg.  You can also view the [slpkg README][8] online.
+
+    man slpkg
+    or
+    slpkg -h
+
+[7]: https://github.com/dslackw/slpkg/releases
+[8]: https://github.com/dslackw/slpkg/blob/master/README.rst
 
 #### Slapt-get and Gslapt Usage
 
