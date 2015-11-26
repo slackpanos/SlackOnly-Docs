@@ -20,8 +20,6 @@ SlackOnly supports the following Slackware releases and architectures:
  * Slackware-current 64 bit [4]
  * Custom Packages 64 bit [5]
 
-_Links_
-
  [1]: http://packages.slackonly.com/pub/packages/14.1-x86/
  [2]: http://packages.slackonly.com/pub/packages/14.1-x86_64/
  [3]: http://panos.slackonly.com/pub/packages/current-x86/
