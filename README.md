@@ -1,13 +1,9 @@
 # Welcome to the SlackOnly software repository!
 
-(This is the $ARCH Slackware $RELEASE directory)
-
-## Introduction
-
 SlackOnly is a third party software repository for Slackware Linux that
 provides binary packages built from [SlackBuilds.org][1] build scripts.
 The goal is to enable users to install any package from
-[SlackBuilds.org][1] using precompiled binary packages. SlackOnly
+[SlackBuilds.org][1] using pre-compiled binary packages. SlackOnly
 packages contain Metadata that provides dependency information to
 package managers that have the ability to read such information.
 SlackOnly assumes that its users are running a full installation of
@@ -35,7 +31,7 @@ SlackOnly supports the following Slackware releases and architectures:
  * Your computer is too slow or old to build a piece of software from
    source in a timely fashion
  * You are not worried about customizing every package and default
-   package configurations are adequte
+   package configurations are adequate
  * Some packages have a massive dependency chain and building it can be
    very complicated and time consuming
 
@@ -48,6 +44,9 @@ SlackOnly on your Slackware installation.
  * slackpkg+
  * slpkg
  * slapt-get and gslapt
+
+Included below are directions explaining how to install and use each of
+these package managers with the SlackOnly repository.
 
 #### Slackpkg+ Usage
 
@@ -137,16 +136,68 @@ SlackOnly on your Slackware installation.
 [7]: https://github.com/dslackw/slpkg/releases
 [8]: https://github.com/dslackw/slpkg/blob/master/README.rst
 
-#### Slapt-get and Gslapt Usage
+#### Slapt-get and gslapt Usage
 
- (EDIT: Add directions for stand alone slapt-get)
- (EDIT: Add optional direction to include gslapt)
+ (TO DO: Add directions for stand alone slapt-get)
+ (TO DO: Add directionis for gslapt)
 
 
-## For Developers and Packagers
+## SlackOnly Quality Control
 
- (EDIT: Add information for package maintainers)
- (EDIT: Add information discussing depenendcy resolution)
+In order for SlackOnly to maintain quality control a few things need to
+happen in the upstream SlackBuilds scripts.  Most of these are already
+included as guidelines on SlackBuilds.org web site.  This information is
+added for completeness.
+
+All of these guidelines should be followed by SlackOnly repository
+contributors as well.
+
+*  All required dependencies used to build each SlackBuild should be
+   present in all .info files
+*  Download links should be accurate within the .info file of every
+   SlackBuild script so that source tarballs can be found easily
+*  MD5 checksums in .info files should be exactly the same as the MD5
+   checksum of the upstream source tarballs so that source tarballs
+   can be verified as authentic easily
+*  Optional dependencies should be included in SlackBuild README files
+*  Whenever possible, upstream source tarballs should be obtained
+   directly from the upstream developer's repository for security
+   reasons
+*  SlackBuild scripts should be tested for both the x86 and x86_64
+   architectures in the targeted Slackware release environment
+*  SlackBuild scripts should be tested on a default installation of
+   Slackware in the targeted Slackware release environment
+*  Packages should be kept as "vanilla" as possible; the only changes to
+   the resulting binary should be for bug fixes and security fixes.
+*  A full installation of Slackware should be used when testing
+   SlackBuild scripts
+
+## Developers
+
+Developers interested in implementing automatic dependency resolution in
+their package manager have access to a number of pieces of information
+that aid in tracking each binary package.  This information is useful
+during the download process and during package removal.
+
+* Package Name
+* Package Mirror
+* Location on the mirror
+* Compressed and uncompressed size
+* Required, Conflicting, and Optional dependencies
+* Package description which contains the contents of the SlackBuild
+  slack-desc file
+
+Each binary package is located in a directory that also provides a
+SHA256 checksum, a MD5SUM checksum, and a PGP signature. Each of these
+files allow for multiple methods to verify authenticity.  There is
+also a file that lists the package file structure and contents.
+
+As little or as much of this information can be parsed by package
+managers to provide more or less authenticity and dependency information.
+To take advantage of all of the features of the SlackOnly repository, it is
+suggested that all of this information be used.  This information assures
+that the correct package and all of its dependencies are being accurately
+enumerated.
 
 ## SlackOnly Contact and Contributors
 
@@ -154,7 +205,7 @@ SlackOnly on your Slackware installation.
 * Project Lead:  Panagiotis Nikolaou <hostmaster -at- slackonly [dot] com>
 * Contributor:  Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
 
-## Credits and Thanks
+## Thanks
 
 * Patrick Volkerding for [Slackware Linux][20]
 * The [SlackBuilds.org][1] administrators and maintainers
