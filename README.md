@@ -76,7 +76,7 @@ feature__
 
     * Add SlackOnly to the list of mirrors.
     * Where RELEASE is either "14.1 or "-current"
-    * Where ARCH is either x86 or x86_64 architecture
+    * Where ARCH is either "x86" or "x86_64" architecture
 
     > MIRRORPLUS['slackonly']=http://slackonly.com/pub/packages/RELEASE-ARCH/
 
@@ -119,7 +119,6 @@ feature__
 ## SlackOnly Contact and Contributors
 
 * Web Site: [www.slackonly.com](http://slackonly.com)
-
 * Project Lead:  Panagiotis Nikolaou <hostmaster -at- slackonly [dot] com>
 * Contributor:  Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
 
