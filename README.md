@@ -99,12 +99,11 @@ SlackOnly on your Slackware installation.
 
 #### Slpkg Usage
 
-1.  Download the latest release of slpkg, [here][7]
-
-    *  You can choose between the source code and the binary package.
-       See the [slpkg README][8] for more information about installing from
-       source. We will choose the binary package.  Be sure to download
-       the right architecture
+1.  Download the latest release of slpkg, [here][7].  You can choose
+    between the source code and the binary package. See the
+    [slpkg README][8] for more information about installing from source.
+    We will choose the binary package.  Be sure to download the right
+    architecture.
 
 2.  Install slpkg as root with the installpkg command:
 
@@ -114,24 +113,16 @@ SlackOnly on your Slackware installation.
     release.  If you are using stable Slackware there is nothing to
     change.  Be sure to save your changes.
 
-    > RELEASE=stable
-    or
-    > RELEASE=current
-
-4.  Edit /etc/slpkg/repositories.conf and enable the "slonly" repository
-    by uncommenting the line.  Be sure to save your changes.
-
-    > # slonly
-    to
-    > slonly
+4.  Edit /etc/slpkg/repositories.conf and enable the SlackOnly repository
+    by uncommenting the line with "slonly."  Be sure to save your changes.
 
 5.  Run the following command to synchronize the package lists:
 
     > root@localhost:~# slpkg update
 
 6.  You are now ready to start using slpkg to manage your SlackOnly
-    binary packages.  Install your first package by telling slpkg to use
-    the SlackOnly repository and then by supplying a package name.
+    binary packages.  Install your first package by first defining
+    "slonly" as the repository and then by supplying a package name.
 
     > root@localhost:~# slpkg -s slonly <package>
 
@@ -139,7 +130,6 @@ SlackOnly on your Slackware installation.
     about slpkg.  You can also view the [slpkg README][8] online.
 
     > root@localhost:~# man slpkg
-    or
     > root@localhost:~# slpkg -h
 
 [7]: https://github.com/dslackw/slpkg/releases
