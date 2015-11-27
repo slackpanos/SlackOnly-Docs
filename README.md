@@ -65,9 +65,6 @@ configuration changes necessary to use each package manager with SlackOnly.
     its extension slackpkg+, do not offer automatic dependency
     resolution as a feature.
 
-    _Slackpkg+ can be installed and configured to use SlackOnly by
-    following these steps:_
-
 1.  First, download slackpkg+ [here][7] and install it as root by
     running the "installpkg" command:
 
