@@ -1,3 +1,8 @@
+TO DO
+-----
+*  Move links to the bottom of the page
+--------
+
 # Welcome to the SlackOnly software repository!
 
 SlackOnly is a third party software repository for Slackware Linux that
@@ -41,45 +46,46 @@ SlackOnly supports the following Slackware releases and architectures:
 There is a variety of package managers that will enable you to use
 SlackOnly on your Slackware installation.
 
- * slackpkg+
+ * slackpkg with the slackpkg+ extension
  * slpkg
- * slapt-get and gslapt
+ * slapt-get and the gslapt GUI
 
-Included below are directions explaining how to install and use each of
-these package managers with the SlackOnly repository.
+Below are the descriptions and directions explaining how to install each
+of these package managers.  Also incuded in the directions are the
+configuration changes necessary to use each package manager with SlackOnly.
 
-#### Slackpkg+ Usage
+#### Slackpkg with Slackpkg+
 
-    *This package manager does not offer automatic dependency resolution.*
+    Slackpkg is included in default installations of the Slackware Linux
+    distribution.  Slackpkg+ is an extension of slackpkg that allows
+    the use of third party repositories.  Many users like slackpkg+ over
+    other third party software management options.  This preference is
+    due to the fact that slackpkg allows users to continue to use the
+    same slackpkg commands that are familiar.  This package manager, and
+    its extension slackpkg+, do not offer automatic dependency
+    resolution as a feature.
 
-1.  Install slackpkg+, which is an extension to slackpkg.
+    _Slackpkg+ can be installed and configured to use SlackOnly by
+    following these steps:_
 
-    * [Download slackpkg+ Here](http://www.slakfinder.org/slackpkg+.html)
-    * As the root user install slackpkg+ with the installpkg command:
+1.  First, download slackpkg+ [here][7] and install it as root by
+    running the "installpkg" command:
 
     > root@localhost:~# installpkg slackpkg+*.t?z
 
-2.  Add to and edit the appropriate sections of slackpkgplus.conf. This
-    file is located in /etc/slackpkg/ and requires root permissions to
-    edit it.
-
-    * Change this line:
-
-    > REPOPLUS=( slackpkgplus restricted alienbob slacky )
-
-    * To read like this line:
+2.  Next, edit /etc/slackpkg/slackpkgplus.conf.  Edit the REPOPLUS
+    variable and add a new SlackOnly MIRRORPLUS variable:
 
     > REPOPLUS=( slackpkgplus restricted alienbob slacky slackonly )
 
-    * Add SlackOnly to the list of mirrors.
-    * Where RELEASE is either "14.1 or "-current"
-    * Where ARCH is either "x86" or "x86_64" architecture
-
     > MIRRORPLUS['slackonly']=http://slackonly.com/pub/packages/RELEASE-ARCH/
 
-    * Save your changes to /etc/slackpkg/slackpkgplus.conf
+    RELEASE should be either "14.1" or "current" and ARCH should be
+    either "x86" or "x86_64".  You should use the same release and
+    architecture as your Slackware installation.  Adding the wrong
+    values will cause problems with your installation.
 
-3.  Next run the following commands as root to import the SlackOnly GPG
+3.  Finally, run the following commands as root to import the SlackOnly GPG
     key and to update the slackpkg cache with the SlackOnly package
     list.
 
@@ -87,60 +93,74 @@ these package managers with the SlackOnly repository.
 
     > root@localhost:~# slackpkg update
 
-4.  You are now ready to use slackpkg with the slackpkg+ extension to
+    You are now ready to use slackpkg with the slackpkg+ extension to
     access the SlackOnly repository of your choice.
 
-    * Notes:  Be sure to add the same repository and architecture as
-      your Slackware installation.  You may run into problems if you add
-      the wrong repository.
-    * Further directions can be found in the man page or viewed online
-      in the [slackpkg+ README][6].
+*   Getting Help
 
-[6]: http://slakfinder.org/slackpkg+/src/README
+    Further directions on how to use slackpkg can be found in the man
+    page or in the [slackpkg+ README][8] online.
 
-#### Slpkg Usage
+[7]: http://sourceforge.net/projects/slackpkgplus/files/
+[8]: http://slakfinder.org/slackpkg+/src/README
 
-1.  Download the latest release of slpkg, [here][7].  You can choose
-    between the source code and the binary package. See the
-    [slpkg README][8] for more information about installing from source.
-    We will choose the binary package.  Be sure to download the right
-    architecture.
+#### Slpkg
 
-2.  Install slpkg as root with the installpkg command:
+    Slpkg is a stand-alone command line package manager.  It
+    automatically computes dependencies,  Slpkg enables the user to
+    install, update, remove packages and their dependencies with just a
+    few commands.  Slpkg distinguishes itself from other package
+    managers by its user friendliness and great documentation.  It
+    offers features like dependency resolution, colorful output, better
+    security, faster processing, amongst other features.
+
+1.  First, download and install the latest release of slpkg.  There are
+    a number of ways to get slpkg.  Python users can install slpkg using
+    the "pip" command.  [SlackBuilds.org][1] users can run the "sbopkg"
+    command to install slpkg.  To install from source, refer to the
+    [slpkg README][9] for more information.  A binary package can be
+    downloaded from the slpkg home page and be installed with the
+    "installpkg" command.
+
+    For simplicity we will download the binary package from the slpkg
+    [Release Page][10] and install it as root using the "installpkg"
+    command:
 
     > root@localhost:~# installpkg slpkg*_dsw.t?z
 
-3.  Edit /etc/slpkg/slpkg.conf and change RELEASE to your Slackware
-    release.  If you are using stable Slackware there is nothing to
-    change.  Be sure to save your changes.
+2.  Next, edit /etc/slpkg/slpkg.conf and change the RELEASE variable to
+    your Slackware release.  If you are using Stable Slackware there is
+    nothing to change.
 
-4.  Edit /etc/slpkg/repositories.conf and enable the SlackOnly repository
-    by uncommenting the line with "slonly."  Be sure to save your changes.
+    > RELEASE=stable
 
-5.  Run the following command to synchronize the package lists:
+3.  Following that, edit /etc/slpkg/repositories.conf and enable the
+    SlackOnly repository by uncommenting the line with: "slonly"
+
+    > slonly
+
+4.  Finally, synchronize the package lists:
 
     > root@localhost:~# slpkg update
 
-6.  You are now ready to start using slpkg to manage your SlackOnly
-    binary packages.  Install your first package by first defining
-    "slonly" as the repository and then by supplying a package name.
+    You are now ready to start using slpkg to manage your SlackOnly
+    binary packages.
 
-    > root@localhost:~# slpkg -s slonly <package>
+*   Getting Help
 
-7.  See the slpkg man page or run the help command for more information
-    about slpkg.  You can also view the [slpkg README][8] online.
+    The slpkg help can be found on your system by running "slpkg -h" and
+    in the man page by running "man slpkg".  The slpkg README can be
+    found in the /usr/doc/slpkg-$VERSION directory on your system.  You
+    can also view the [README online][9].
 
-    > root@localhost:~# man slpkg
-    > root@localhost:~# slpkg -h
+[9]: https://github.com/dslackw/slpkg/blob/master/README.rst
+[10]: https://github.com/dslackw/slpkg/releases
 
-[7]: https://github.com/dslackw/slpkg/releases
-[8]: https://github.com/dslackw/slpkg/blob/master/README.rst
+#### Slapt-get and Gslapt Usage
 
-#### Slapt-get and gslapt Usage
+  (TO DO: Add directions for slapt-get)
 
- (TO DO: Add directions for stand alone slapt-get)
- (TO DO: Add directionis for gslapt)
-
+  (TO DO: Add directions for gslapt)
 
 ## SlackOnly Quality Control
 
