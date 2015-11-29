@@ -7,6 +7,6 @@
 
 # Contributors
 
-* Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
+*  Brenton Earl [www.exitstatusone.com](http://exitstatusone.com)
 
-* Petar Petrov [www.slackalaxy.wordpress.com](https://slackalaxy.wordpress.com/)
+   Wrote documentation and provided content for the SlackOnly blog.
