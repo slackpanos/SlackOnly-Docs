@@ -1,7 +1,9 @@
 TO DO
 ------
 *  slapt-get and gslapt directions
+
 *  usm directions
+
 -----
 
 # Welcome to the SlackOnly software repository!
@@ -147,10 +149,10 @@ configuration changes necessary to use each package manager with SlackOnly.
 
 *  See DEVELOPERS.md and QUALITY_CONTROL.md
 
-## SlackOnly Contact
+## Contact
 
 * Web Site: [www.slackonly.com](http://slackonly.com)
-* Project Lead:  Panagiotis Nikolaou "hostmaster -at- slackonly [dot] com"
+* Project Lead:  Panagiotis Nikolaou [hostmaster -at- slackonly -dot- com]()
 
 ## Copyright
 
