@@ -1,6 +1,9 @@
 # SlackOnly - Frequently Asked Questions
 
-## Why should you use SlackOnly?
+Below is a list of questions and answers discussing various topics of or
+related to the SlackOnly repositories.
+
+### Why should you use SlackOnly?
 
  * To quickly test a program before building it from source
  * Your computer is too slow or old to build a piece of software from
@@ -10,26 +13,25 @@
  * Some packages have a massive dependency chain and building it can be
    very complicated and time consuming
 
-## What package managers support SlackOnly?
+### What package managers support SlackOnly?
 
   * slackpkg+
   * slpkg
   * slapt-get
   * usm
 
-Directions to use these package managers can be found in the repository
-root directory of your choosing in the README.TXT.
+Directions can be found in the repository in README.md.
 
-## How can I develop a package manager for use with SlackOnly?
+### How can you develop a package manager for use with SlackOnly?
 
-Information for developers can be found in the repository root directory
-of your choosing, in the file named DEVELOPERS.TXT
+Information for developers can be found in DEVELOPERS.md
 
-## How does SlackOnly guarantee quality control?
+### How does SlackOnly guarantee quality control?
 
-TO DO
+(EDIT: Add information discussing quality control and how its applied
+while creating SlackOnly packages)
 
-## How to contact the SlackOnly maintainer?
+### How to contact the SlackOnly maintainer?
 
 Email is the best way to contact us.  See the web site contact page for
 more information.
