@@ -139,7 +139,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 
   (TO DO: Add directions for gslapt)
 
-### USM Usage
+#### USM Usage
 
   (TO DO:  Add directions for usm)
 
