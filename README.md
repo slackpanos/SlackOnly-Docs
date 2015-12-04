@@ -1,6 +1,6 @@
 TO DO
 ------
-*  slapt-get and gslapt directions
+*  gslapt directions
 
 *  usm directions
 
