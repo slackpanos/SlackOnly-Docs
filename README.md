@@ -133,16 +133,46 @@ configuration changes necessary to use each package manager with SlackOnly.
     found in the /usr/doc/slpkg-$VERSION directory on your system.  You
     can also view the [README online][9].
 
-#### Slapt-get and Gslapt Usage
+#### Slapt-get
 
     slapt-get is an APT-like package management system for Slackware. It
     aims to emulate Debian's package manager (apt-get) as closely as
     possible.  It provides automatic dependency resolution and a
     companion graphical interface called gslapt.
 
-    (TO DO: Add directions for slapt-get/gslapt)
+1.  Download and install [slapt-get][11].
 
-#### USM Usage
+    > root@localhost:~# installpkg slapt-get*.t?z
+
+2.  Edit /etc/slapt-get/slapt-getrc and add:
+
+    > SOURCE=http://packages.slackonly.com/pub/packages/RELEASE-ARCH/:DEFAULT
+
+    RELEASE should be either "14.1" or "current" and ARCH should be
+    either "x86" or "x86_64".  You should use the same release and
+    architecture as your Slackware installation.  Adding the wrong
+    values will cause problems with your installation.
+
+3.  Next, update the package list cache for slapt-get:
+
+    > root@localhost:~# slapt-get --update
+
+    You are ready to start using slapt-get with the SlackOnly
+    repository.
+
+*   Getting Help
+
+    You can access the slapt-get help by running "slapt-get -h".
+    Additional help can be found by looking at the man page, "man
+    slapt-get".  There is a FAQ included with the slapt-get package,
+    located in /usr/share/doc/slapt-get-$VERSION.  Further inquiries can
+    be found on the [slapt-get home page][12].
+
+### Gslapt
+
+  (TO DO:  Add directions for gslapt)
+
+#### USM
 
   (TO DO:  Add directions for usm)
 
@@ -174,3 +204,5 @@ configuration changes necessary to use each package manager with SlackOnly.
 [8]: http://slakfinder.org/slackpkg+/src/README
 [9]: https://github.com/dslackw/slpkg/blob/master/README.rst
 [10]: https://github.com/dslackw/slpkg/releases
+[11]: http://software.jaos.org/#slapt-get
+[12]: http://software.jaos.org/
