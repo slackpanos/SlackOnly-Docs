@@ -135,9 +135,12 @@ configuration changes necessary to use each package manager with SlackOnly.
 
 #### Slapt-get and Gslapt Usage
 
-  (TO DO: Add directions for slapt-get)
+    slapt-get is an APT-like package management system for Slackware. It
+    aims to emulate Debian's package manager (apt-get) as closely as
+    possible.  It provides automatic dependency resolution and a
+    companion graphical interface called gslapt.
 
-  (TO DO: Add directions for gslapt)
+    (TO DO: Add directions for slapt-get/gslapt)
 
 #### USM Usage
 
