@@ -1,11 +1,3 @@
-TO DO
-------
-*  gslapt directions
-
-*  usm directions
-
------
-
 # Welcome to the SlackOnly software repository!
 
 SlackOnly is a third party software repository for Slackware Linux that
@@ -24,6 +16,8 @@ SlackOnly supports the following Slackware releases and architectures:
  * Slackware-current 32 bit [current-x86][4]
  * Slackware-current 64 bit [current-x86_64][5]
  * Custom 64 bit Packages [custom-x86_64][6]
+
+ Links to each repository are in the footer of this document.
 
 ## How to use SlackOnly
 
@@ -168,7 +162,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     located in /usr/share/doc/slapt-get-$VERSION.  Further inquiries can
     be found on the [slapt-get home page][12].
 
-### Gslapt
+#### Gslapt
 
   (TO DO:  Add directions for gslapt)
 
