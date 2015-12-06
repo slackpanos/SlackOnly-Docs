@@ -1,4 +1,4 @@
 This is the SlackOnly Slackware 14.1-x86_64 Repository.
 
-For documentation, please see the README.md located at:
+For documentation, please see the README located at:
 http://packages.slackonly.com/pub/packages/

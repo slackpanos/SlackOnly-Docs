@@ -174,7 +174,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 
 ## Development and Quality Control
 
-*  See DEVELOPERS.md and QUALITY_CONTROL.md
+*  See DEVELOPERS and QUALITY_CONTROL
 
 ## Contact
 

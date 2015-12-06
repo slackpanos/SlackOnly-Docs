@@ -34,7 +34,7 @@ slackpkg with slackpkg+, slpkg, slapt-get, and usm.
 
 ## How can you set up these package managers to use SlackOnly repositories?
 
-Directions can be found in the README.TXT in each repository.
+Directions can be found in the README.
 
 ## Why should you trust that SlackOnly provides quality software?
 
@@ -57,8 +57,7 @@ administrator as soon as encountered.
 
 ## How can you develop a package manager for use with SlackOnly?
 
-Information for developers can be found in DEVELOPERS.TXT in each
-repository.
+Information for developers can be found in DEVELOPERS.
 
 ## How can you contact the SlackOnly maintainer?
 
