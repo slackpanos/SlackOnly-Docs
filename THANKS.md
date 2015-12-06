@@ -1,5 +1,9 @@
 # Credit and Thanks
 
+A special thanks goes out to all the listed individuals, maintainers,
+contributors and developers.  Without all of you SlackOnly would not be
+possible.
+
 * Patrick Volkerding for [Slackware Linux][1]
 * The [SlackBuilds.org][2] administrators and maintainers
 * David Spencer for [slackrepo][3]
