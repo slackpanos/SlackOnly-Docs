@@ -9,6 +9,10 @@ dependencies.
 
 Brenton Earl - brent@exitstatusone.com
 
+Much of the code was writen by [Bill Rawlinson in
+2007](http://code.rawlinson.us).
+
+
 #### What does it do?
 
 *  Traverses through a SlackBuilds repository
