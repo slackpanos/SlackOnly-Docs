@@ -5,6 +5,9 @@ SlackOnly Slackware software repositories.  Will correct issues with
 package meta data generation and allow package managers to install all
 dependencies.
 
+Edit the included configuration file to change settings for the current
+repository.
+
 #### Author
 
 Brenton Earl - brent@exitstatusone.com
