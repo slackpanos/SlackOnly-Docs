@@ -50,13 +50,32 @@ class SlackRequired
           next
         end
       else
+        # Split file name from .info extension
         filetype = File.basename(path.downcase).split(".").last
+        # Check if file extension is .info
         if @includedFileTypes.include?(filetype)
 
           # Print file path of each .info
           puts path
 
           # Read REQUIRES line from each .info
+          #
+          # Possibly Change to something like
+          # To iterrate through all files
+          # in order to write 'input' to a
+          # slack-required file
+          #
+          # Untested
+          #
+          # for p in path
+          #   requires = IO.readlines(path)[7]
+          #   requires_regex = /REQUIRES\=\".*\"/
+          #   input = requires_regex.match(requires)
+          #   puts input
+          # end
+          #
+          #
+          # Need a better way
           File.open(path).each do |requires|
             requires_regex = /REQUIRES\=\".*\"/
             @@intext = requires_regex.match(requires)
