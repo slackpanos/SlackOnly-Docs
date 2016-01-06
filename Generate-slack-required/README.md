@@ -24,7 +24,8 @@ Much of the code was writen by [Bill Rawlinson in
 
 #### To Do
 
-*  Touch 'slack-required' files in each SlackBuild directory
+*  Touch 'slack-required' files in each SlackBuild directory (if needed)
 *  Write dependency names one line at a time to each 'slack-required'
    file
-
+*  Add in each SlackBuild a section to include 'slack-required' in to
+   install dir (if needed)
