@@ -28,4 +28,11 @@ Much of the code was writen by [Bill Rawlinson in
 *  Write dependency names one line at a time to each 'slack-required'
    file
 *  Add in each SlackBuild a section to include 'slack-required' in to
-   install dir (if needed)
+   install dir (if needed), example below.
+
+```bash
+mkdir -p $PKG/install
+cat $CWD/slack-desc > $PKG/install/slack-desc
+cat $CWD/doinst.sh > $PKG/install/doinst.sh
+cat $CWD/slack-required > $PKG/install/slack-required
+```
