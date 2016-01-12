@@ -84,8 +84,16 @@ class SlackRequired
             print "slack-required exists here: "
             puts slack_required
             print "\n\n"
+
+            # Delete contents of slack-required
+            File.truncate(slack_required, 0)
           else
-            print "slack-required does not exist! \n\n"
+            print "slack-required does not exist!\n"
+            print "creating it here: "
+            # Touch slack-required so that it does exist
+            File.open(slack_required, "w").close()
+            puts slack_required
+            print "\n\n"
           end
 
         end
