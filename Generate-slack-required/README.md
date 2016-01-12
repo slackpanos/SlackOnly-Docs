@@ -1,3 +1,7 @@
+# Moved to this repository
+
+* [Generate-slack-required](https://github.com/BrentonEarl/Generate-slack-required)
+
 ## About
 
 Written to generate more accurate dependency information for the
