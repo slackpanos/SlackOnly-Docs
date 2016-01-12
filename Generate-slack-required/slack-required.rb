@@ -55,32 +55,18 @@ class SlackRequired
         # Check if file extension is .info
         if @includedFileTypes.include?(filetype)
 
-          # Print file path of each .info
+
+          print "File searched: "
           puts path
 
-          # Read REQUIRES line from each .info
-          #
-          # Possibly Change to something like
-          # To iterrate through all files
-          # in order to write 'input' to a
-          # slack-required file
-          #
-          # Untested
-          #
-          # for p in path
-          #   requires = IO.readlines(path)[7]
-          #   requires_regex = /REQUIRES\=\".*\"/
-          #   input = requires_regex.match(requires)
-          #   puts input
-          # end
-          #
-          #
-          # Need a better way
-          File.open(path).each do |requires|
-            requires_regex = /REQUIRES\=\".*\"/
-            @@intext = requires_regex.match(requires)
-            puts @@intext
-          end
+          requires_regex = /REQUIRES\=\".*\"/
+          infofile = File.readlines(path)
+          matches = infofile.select { |requires| requires[requires_regex] }
+
+          print "Dependencies: "
+          puts matches
+          print "\n"
+
         end
       end
     end
