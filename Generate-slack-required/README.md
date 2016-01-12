@@ -21,6 +21,7 @@ Much of the code was writen by [Bill Rawlinson in
 *  Traverses through a SlackBuilds repository
 *  Locates each .info file
 *  Reads the "REQUIRES" line into memory
+*  Stores slack-required output directory in memory
 
 #### To Do
 
