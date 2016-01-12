@@ -47,13 +47,11 @@ dep3
 ```bash
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh > $PKG/install/doinst.sh
 ```
 *  Ability to append the following to all .SlackBuild files.  Must write
    to files efficiently.
 ```bash
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh > $PKG/install/doinst.sh
 +cat $CWD/slack-required > $PKG/install/slack-required
 ```
