@@ -65,6 +65,8 @@ class SlackRequired
           matches = infofile.select { |requires| requires[requires_regex] }
           # Finds the directory the slack-required will be written to
           infofile_dir = File.dirname(path)
+          # Combine working directory with slack-required file name
+          slack_required = infofile_dir + "/" + "slack-required"
 
           # Output results
           print "File searched: "
@@ -76,6 +78,16 @@ class SlackRequired
           print "Dependencies: "
           puts matches
           print "\n"
+
+          # Check if slack-required exists in working directory
+          if File.exist?(slack_required)
+            print "slack-required exists here: "
+            puts slack_required
+            print "\n\n"
+          else
+            print "slack-required does not exist! \n\n"
+          end
+
         end
       end
     end
