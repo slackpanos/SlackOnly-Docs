@@ -55,18 +55,27 @@ class SlackRequired
         # Check if file extension is .info
         if @includedFileTypes.include?(filetype)
 
+          # Regex to filter out REQUIRES
+          # Needs to be adjusted to pull just the dependency names
+          # My regex skills are weak, need to research
+          requires_regex = /REQUIRES\=\".*\"/
+          # Read info file in each directory into memory one at a time
+          infofile = File.readlines(path)
+          # Matches the regex up to each REQUIRES line
+          matches = infofile.select { |requires| requires[requires_regex] }
+          # Finds the directory the slack-required will be written to
+          infofile_dir = File.dirname(path)
 
+          # Output results
           print "File searched: "
           puts path
 
-          requires_regex = /REQUIRES\=\".*\"/
-          infofile = File.readlines(path)
-          matches = infofile.select { |requires| requires[requires_regex] }
+          print "File resides in this directory: "
+          puts infofile_dir
 
           print "Dependencies: "
           puts matches
           print "\n"
-
         end
       end
     end
