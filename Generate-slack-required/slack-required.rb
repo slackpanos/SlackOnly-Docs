@@ -95,7 +95,14 @@ class SlackRequired
             puts slack_required
             print "\n\n"
           end
-
+          # Rework this into the above if else statement
+          # To assure DRY
+          #
+          # if File.exist?(slack_required)
+          # Append matches var to slack_required files 
+          # append = File.open(slack_required, "a")
+          # append.write(matches)
+          # end
         end
       end
     end
