@@ -13,9 +13,11 @@ SlackOnly supports the following Slackware releases and architectures:
 
  * Slackware 14.1 32 bit [14.1-x86][2]
  * Slackware 14.1 64 bit [14.1-x86_64][3]
- * Slackware-current 32 bit [current-x86][4]
- * Slackware-current 64 bit [current-x86_64][5]
- * Custom 64 bit Packages [custom-x86_64][6]
+ * Slackware 14.2 32 bit [14.1-x86][4]
+ * Slackware 14.2 64 bit [14.1-x86_64][5]
+ * Slackware-current 32 bit [current-x86][6]
+ * Slackware-current 64 bit [current-x86_64][7]
+ * Custom 64 bit Packages [custom-x86_64][8]
 
 Links to each repository are in the footer of this document.
 
@@ -49,16 +51,16 @@ configuration changes necessary to use each package manager with SlackOnly.
 
     > root@localhost:~# installpkg slackpkg+*.t?z
 
-2.  Next, edit /etc/slackpkg/slackpkgplus.conf.  Edit the REPOPLUS
+2.  Next, edit /etc/slackpkg/slackpkgplus.conf. Edit the REPOPLUS
     variable and add a new SlackOnly MIRRORPLUS variable:
 
     > REPOPLUS=( slackpkgplus restricted alienbob slacky slackonly )
 
     > MIRRORPLUS['slackonly']=http://slackonly.com/pub/packages/RELEASE-ARCH/
 
-    RELEASE should be either "14.1" or "current" and ARCH should be
-    either "x86" or "x86_64".  You should use the same release and
-    architecture as your Slackware installation.  Adding the wrong
+    RELEASE should be either "14.1" or "14.2" or "current" and ARCH should be
+    either "x86" or "x86_64". You should use the same release and
+    architecture as your Slackware installation. Adding the wrong
     values will cause problems with your installation.
 
 3.  Finally, run the following commands as root to import the SlackOnly GPG
@@ -142,7 +144,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 
     > SOURCE=http://packages.slackonly.com/pub/packages/RELEASE-ARCH/:DEFAULT
 
-    RELEASE should be either "14.1" or "current" and ARCH should be
+    RELEASE should be either "14.1" or "14.2" or "current" and ARCH should be
     either "x86" or "x86_64".  You should use the same release and
     architecture as your Slackware installation.  Adding the wrong
     values will cause problems with your installation.
@@ -188,15 +190,17 @@ configuration changes necessary to use each package manager with SlackOnly.
 
 ---
 
-[1]: http://slackbuilds.org/
-[2]: http://packages.slackonly.com/pub/packages/14.1-x86/
-[3]: http://packages.slackonly.com/pub/packages/14.1-x86_64/
-[4]: http://panos.slackonly.com/pub/packages/current-x86/
-[5]: http://packages.slackonly.com/pub/packages/current-x86_64/
-[6]: http://packages.slackonly.com/pub/packages/custom-x86_64/
-[7]: http://sourceforge.net/projects/slackpkgplus/files/
-[8]: http://slakfinder.org/slackpkg+/src/README
-[9]: https://github.com/dslackw/slpkg/blob/master/README.rst
-[10]: https://github.com/dslackw/slpkg/releases
+[1]: https://slackbuilds.org/
+[2]: https://packages.slackonly.com/pub/packages/14.1-x86/
+[3]: https://packages.slackonly.com/pub/packages/14.1-x86_64/
+[4]: https://packages.slackonly.com/pub/packages/14.2-x86/
+[5]: https://packages.slackonly.com/pub/packages/14.2-x86_64/
+[6]: https://packages.slackonly.com/pub/packages/current-x86/
+[7]: https://packages.slackonly.com/pub/packages/current-x86_64/
+[8]: https://packages.slackonly.com/pub/packages/custom-x86_64/
+[9]: https://sourceforge.net/projects/slackpkgplus/files/
+[10]: http://slakfinder.org/slackpkg+/src/README
+[11]: https://github.com/dslackw/slpkg/blob/master/README.rst
+[12]: https://github.com/dslackw/slpkg/releases
 [11]: http://software.jaos.org/#slapt-get
 [12]: http://software.jaos.org/
