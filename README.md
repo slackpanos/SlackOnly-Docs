@@ -13,8 +13,8 @@ SlackOnly supports the following Slackware releases and architectures:
 
  * Slackware 14.1 32 bit [14.1-x86][2]
  * Slackware 14.1 64 bit [14.1-x86_64][3]
- * Slackware 14.2 32 bit [14.1-x86][4]
- * Slackware 14.2 64 bit [14.1-x86_64][5]
+ * Slackware 14.2 32 bit [14.2-x86][4]
+ * Slackware 14.2 64 bit [14.2-x86_64][5]
  * Slackware-current 32 bit [current-x86][6]
  * Slackware-current 64 bit [current-x86_64][7]
  * Custom 64 bit Packages [custom-x86_64][8]
