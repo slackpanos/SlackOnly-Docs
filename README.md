@@ -32,7 +32,7 @@ SlackOnly on your Slackware installation.
  * usm
 
 Below are the descriptions and directions explaining how to install each
-of these package managers.  Also incuded in the directions are the
+of these package managers.  Also included in the directions are the
 configuration changes necessary to use each package manager with SlackOnly.
 
 #### Slackpkg with Slackpkg+
@@ -46,7 +46,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     its extension slackpkg+, do not offer automatic dependency
     resolution as a feature.
 
-1.  First, download slackpkg+ [here][7] and install it as root by
+1.  First, download slackpkg+ [here][9] and install it as root by
     running the "installpkg" command:
 
     > root@localhost:~# installpkg slackpkg+*.t?z
@@ -77,7 +77,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 *   Getting Help
 
     Further directions on how to use slackpkg can be found in the man
-    page or in the [slackpkg+ README][8] online.
+    page or in the [slackpkg+ README][10] online.
 
 
 #### Slpkg
@@ -94,12 +94,12 @@ configuration changes necessary to use each package manager with SlackOnly.
     a number of ways to get slpkg.  Python users can install slpkg using
     the "pip" command.  [SlackBuilds.org][1] users can run the "sbopkg"
     command to install slpkg.  To install from source, refer to the
-    [slpkg README][9] for more information.  A binary package can be
+    [slpkg README][11] for more information.  A binary package can be
     downloaded from the slpkg home page and be installed with the
     "installpkg" command.
 
     For simplicity we will download the binary package from the slpkg
-    [Release Page][10] and install it as root using the "installpkg"
+    [Release Page][12] and install it as root using the "installpkg"
     command:
 
     > root@localhost:~# installpkg slpkg*_dsw.t?z
@@ -127,7 +127,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     The slpkg help can be found on your system by running "slpkg -h" and
     in the man page by running "man slpkg".  The slpkg README can be
     found in the /usr/doc/slpkg-$VERSION directory on your system.  You
-    can also view the [README online][9].
+    can also view the [README online][11].
 
 #### Slapt-get
 
@@ -136,7 +136,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     possible.  It provides automatic dependency resolution and a
     companion graphical interface called gslapt.
 
-1.  Download and install [slapt-get][11].
+1.  Download and install [slapt-get][13].
 
     > root@localhost:~# installpkg slapt-get*.t?z
 
@@ -149,7 +149,11 @@ configuration changes necessary to use each package manager with SlackOnly.
     architecture as your Slackware installation.  Adding the wrong
     values will cause problems with your installation.
 
-3.  Next, update the package list cache for slapt-get:
+3.  Next, import the SlackOnly GPG key:
+
+    > root@localhost:~# slapt-get --add-keys
+
+4.  Finally, update the package list cache for slapt-get:
 
     > root@localhost:~# slapt-get --update
 
@@ -162,11 +166,37 @@ configuration changes necessary to use each package manager with SlackOnly.
     Additional help can be found by looking at the man page, "man
     slapt-get".  There is a FAQ included with the slapt-get package,
     located in /usr/share/doc/slapt-get-$VERSION.  Further inquiries can
-    be found on the [slapt-get home page][12].
+    be found on the [slapt-get home page][14].
 
 #### Gslapt
 
-  (TO DO:  Add directions for gslapt)
+    Gslapt is a GTK front-end for slapt-get.  It aims to streamline the
+    package management process for slapt-get.  It is similar to the
+    Synaptic GUI package manager seen in Debian Linux.
+
+1.  Download and install [Gslapt][15]:
+
+    > root@localhost:~# installpkg gslapt*.t?z
+
+2.  Launch Gslapt with root privileges.  This can be done directly by
+    logging into the root account.  It can also be launched as a
+    limitted user by by prefixing the "gslapt" command with kdesu.
+
+    As root:
+    > root@localhost:~# gslapt
+
+    As a limitted user:
+    > user@localhost:~$ kdesu gslapt
+
+    You will be asked for the root account password if you use "kdesu".
+
+*   Getting Help
+
+    You can find additional documentation, as well as screenshots of
+    Gslapt in action on the [Gslapt home page][15].  On this page there
+    is also a link to the slapt-get mailing list, which is also used for
+    Gslapt.  As always you can find the README and FAQ files in
+    /usr/share/doc/gslapt as well.
 
 #### USM
 
@@ -202,5 +232,6 @@ configuration changes necessary to use each package manager with SlackOnly.
 [10]: http://slakfinder.org/slackpkg+/src/README
 [11]: https://github.com/dslackw/slpkg/blob/master/README.rst
 [12]: https://github.com/dslackw/slpkg/releases
-[11]: http://software.jaos.org/#slapt-get
-[12]: http://software.jaos.org/
+[13]: http://software.jaos.org/#slapt-get
+[14]: http://software.jaos.org/
+[15]: http://software.jaos.org/#gslapt
