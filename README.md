@@ -29,7 +29,6 @@ SlackOnly on your Slackware installation.
  * slackpkg with the slackpkg+ extension
  * slpkg
  * slapt-get and the gslapt GUI
- * usm
 
 Below are the descriptions and directions explaining how to install each
 of these package managers.  Also included in the directions are the
@@ -197,10 +196,6 @@ configuration changes necessary to use each package manager with SlackOnly.
     is also a link to the slapt-get mailing list, which is also used for
     Gslapt.  As always you can find the README and FAQ files in
     /usr/share/doc/gslapt as well.
-
-#### USM
-
-  (TO DO:  Add directions for usm)
 
 ---
 

@@ -20,7 +20,7 @@ the site "About" page.
 There are many package managers for Slackware that can be used to access
 third party software repositories like SlackOnly.  So far, only a few
 have been tested with our repositories.  These package managers are:
-slackpkg with slackpkg+, slpkg, slapt-get, and usm.
+slackpkg with slackpkg+, slpkg, and slapt-get.
 
   * slackpkg+ is an extension of Slackpkg.  This package manager does
     not provide automatic dependency resolution.
@@ -29,8 +29,6 @@ slackpkg with slackpkg+, slpkg, slapt-get, and usm.
   * slapt-get is an APT-like package management system for Slackware.
     It aims to emulate Debian's package manager (apt-get) as closely as
     possible.
-  * Usm unifies various package repositories.  It also has support for
-    building from source using SlackBuilds.org.
 
 ## How can you set up these package managers to use SlackOnly repositories?
 

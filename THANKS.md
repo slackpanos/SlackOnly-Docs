@@ -11,7 +11,6 @@ possible.
 * Eric Hameleers for the [slackpkg+ directions][5]
 * Dimitris Zlatanidis for the [slpkg package manager][6]
 * Jason Woodward and Contributors for [slapt-get and gslapt][7]
-* brokenman for [usm][8]
 
 [1]: http://www.slackware.com/
 [2]: http://slackbuilds.org/
@@ -20,4 +19,3 @@ possible.
 [5]: http://alien.slackbook.org/blog/introducing-slackpkg-an-extension-to-slackpkg-for-3rd-party-repositories/
 [6]: https://github.com/dslackw/slpkg
 [7]: http://software.jaos.org/
-[8]: http://sourceforge.net/projects/usm/
