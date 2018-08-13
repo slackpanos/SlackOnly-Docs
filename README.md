@@ -55,7 +55,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 
     > REPOPLUS=( slackpkgplus restricted alienbob slacky slackonly )
 
-    > MIRRORPLUS['slackonly']=http://slackonly.com/pub/packages/RELEASE-ARCH/
+    > MIRRORPLUS['slackonly']=https://packages.slackonly.com/pub/packages/RELEASE-ARCH/
 
     RELEASE should be either "14.1" or "14.2" or "current" and ARCH should be
     either "x86" or "x86_64". You should use the same release and
@@ -141,7 +141,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 
 2.  Edit /etc/slapt-get/slapt-getrc and add:
 
-    > SOURCE=http://packages.slackonly.com/pub/packages/RELEASE-ARCH/:DEFAULT
+    > SOURCE=https://packages.slackonly.com/pub/packages/RELEASE-ARCH/:DEFAULT
 
     RELEASE should be either "14.1" or "14.2" or "current" and ARCH should be
     either "x86" or "x86_64".  You should use the same release and
@@ -205,7 +205,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 
 ## Contact
 
-* Web Site: [www.slackonly.com](http://slackonly.com)
+* Web Site: [www.slackonly.com](https://slackonly.com)
 * Project Lead:  Panagiotis Nikolaou [hostmaster -at- slackonly -dot- com]()
 
 ## Copyright
@@ -227,6 +227,6 @@ configuration changes necessary to use each package manager with SlackOnly.
 [10]: http://slakfinder.org/slackpkg+/src/README
 [11]: https://github.com/dslackw/slpkg/blob/master/README.rst
 [12]: https://github.com/dslackw/slpkg/releases
-[13]: http://software.jaos.org/#slapt-get
-[14]: http://software.jaos.org/
-[15]: http://software.jaos.org/#gslapt
+[13]: https://software.jaos.org/#slapt-get
+[14]: https://software.jaos.org/
+[15]: https://software.jaos.org/#gslapt

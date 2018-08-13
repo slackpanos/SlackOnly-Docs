@@ -13,9 +13,9 @@ possible.
 * Jason Woodward and Contributors for [slapt-get and gslapt][7]
 
 [1]: http://www.slackware.com/
-[2]: http://slackbuilds.org/
+[2]: https://slackbuilds.org/
 [3]: https://idlemoor.github.io/slackrepo/index.html
 [4]: http://www.slakfinder.org/slackpkg+.html
-[5]: http://alien.slackbook.org/blog/introducing-slackpkg-an-extension-to-slackpkg-for-3rd-party-repositories/
+[5]: https://alien.slackbook.org/blog/introducing-slackpkg-an-extension-to-slackpkg-for-3rd-party-repositories/
 [6]: https://github.com/dslackw/slpkg
-[7]: http://software.jaos.org/
+[7]: https://software.jaos.org/
