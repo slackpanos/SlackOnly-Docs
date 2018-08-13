@@ -2,8 +2,9 @@
 
 Below is a list of questions and answers discussing various topics of or
 related to the SlackOnly repositories.  If your question is missing,
-please email the site administrator.  Contact details can be found on
-the site "About" page.
+please email the site administrator.
+
+Send all inquiries to: hostmaster -at- slackonly -dot- com
 
 ## Why should you use SlackOnly?
 
@@ -32,7 +33,7 @@ slackpkg with slackpkg+, slpkg, and slapt-get.
 
 ## How can you set up these package managers to use SlackOnly repositories?
 
-Directions can be found in the README.
+Directions can be found in the [README](https://slackonly.com/readme.html).
 
 ## Why should you trust that SlackOnly provides quality software?
 
@@ -55,9 +56,10 @@ administrator as soon as encountered.
 
 ## How can you develop a package manager for use with SlackOnly?
 
-Information for developers can be found in DEVELOPERS.
+Information for developers can be found in [DEVELOPERS](https://slackonly.com/developers.html).
 
 ## How can you contact the SlackOnly maintainer?
 
-Email is the best way to contact us.  See the About Us page on the
-SlackOnly web site for more information.
+Email is the best way to contact us.  Send all inquiries to:
+
+* hostmaster -at- slackonly -dot- com
