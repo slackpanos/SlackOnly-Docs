@@ -15,9 +15,6 @@ SlackOnly supports the following Slackware releases and architectures:
  * Slackware 14.1 64 bit [14.1-x86_64][3]
  * Slackware 14.2 32 bit [14.2-x86][4]
  * Slackware 14.2 64 bit [14.2-x86_64][5]
- * Slackware-current 32 bit [current-x86][6]
- * Slackware-current 64 bit [current-x86_64][7]
- * Custom 64 bit Packages [custom-x86_64][8]
 
 Links to each repository are in the footer of this document.
 
@@ -45,8 +42,10 @@ configuration changes necessary to use each package manager with SlackOnly.
     its extension slackpkg+, do not offer automatic dependency
     resolution as a feature.
 
-1.  First, download slackpkg+ [here][9] and install it as root by
-    running the "installpkg" command:
+1.  First, download slackpkg+ and install it as root by running the
+    "installpkg" command.
+
+    It can be downloaded [here](https://sourceforge.net/projects/slackpkgplus/files/).
 
     > root@localhost:~# installpkg slackpkg+*.t?z
 
@@ -76,7 +75,7 @@ configuration changes necessary to use each package manager with SlackOnly.
 *   Getting Help
 
     Further directions on how to use slackpkg can be found in the man
-    page or in the [slackpkg+ README][10] online.
+    page or online in the [slackpkg+ README](http://slakfinder.org/slackpkg+/src/README).
 
 
 #### Slpkg
@@ -93,13 +92,17 @@ configuration changes necessary to use each package manager with SlackOnly.
     a number of ways to get slpkg.  Python users can install slpkg using
     the "pip" command.  [SlackBuilds.org][1] users can run the "sbopkg"
     command to install slpkg.  To install from source, refer to the
-    [slpkg README][11] for more information.  A binary package can be
+    slpkg README for more information.  A binary package can be
     downloaded from the slpkg home page and be installed with the
     "installpkg" command.
 
+    The README can be found [here](https://gitlab.com/dslackw/slpkg/blob/master/README.rst).
+
     For simplicity we will download the binary package from the slpkg
-    [Release Page][12] and install it as root using the "installpkg"
-    command:
+    SourceForge page and install it as root using the "installpkg"
+    command.
+
+    The slpkg SourceForge page can be found [here](https://sourceforge.net/projects/slpkg/files/binary/).
 
     > root@localhost:~# installpkg slpkg*_dsw.t?z
 
@@ -126,7 +129,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     The slpkg help can be found on your system by running "slpkg -h" and
     in the man page by running "man slpkg".  The slpkg README can be
     found in the /usr/doc/slpkg-$VERSION directory on your system.  You
-    can also view the [README online][11].
+    can also view the [README online](https://gitlab.com/dslackw/slpkg/blob/master/README.rst).
 
 #### Slapt-get
 
@@ -135,7 +138,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     possible.  It provides automatic dependency resolution and a
     companion graphical interface called gslapt.
 
-1.  Download and install [slapt-get][13].
+1.  Download and install [slapt-get](https://software.jaos.org/#slapt-get).
 
     > root@localhost:~# installpkg slapt-get*.t?z
 
@@ -165,7 +168,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     Additional help can be found by looking at the man page, "man
     slapt-get".  There is a FAQ included with the slapt-get package,
     located in /usr/share/doc/slapt-get-$VERSION.  Further inquiries can
-    be found on the [slapt-get home page][14].
+    be found on the [slapt-get home page](https://software.jaos.org/).
 
 #### Gslapt
 
@@ -173,7 +176,7 @@ configuration changes necessary to use each package manager with SlackOnly.
     package management process for slapt-get.  It is similar to the
     Synaptic GUI package manager seen in Debian Linux.
 
-1.  Download and install [Gslapt][15]:
+1.  Download and install [Gslapt](https://software.jaos.org/#gslapt):
 
     > root@localhost:~# installpkg gslapt*.t?z
 
@@ -192,16 +195,18 @@ configuration changes necessary to use each package manager with SlackOnly.
 *   Getting Help
 
     You can find additional documentation, as well as screenshots of
-    Gslapt in action on the [Gslapt home page][15].  On this page there
+    Gslapt in action on the Gslapt home page.  On this page there
     is also a link to the slapt-get mailing list, which is also used for
     Gslapt.  As always you can find the README and FAQ files in
     /usr/share/doc/gslapt as well.
+
+    The Gslapt home page can be found [here](https://software.jaos.org/).
 
 ---
 
 ## Development and Quality Control
 
-*  See DEVELOPERS and QUALITY_CONTROL
+*  See [DEVELOPERS](https://slackonly.com/developers.html) and [QUALITY_CONTROL](https://slackonly.com/quality_control.html)
 
 ## Contact
 
@@ -220,13 +225,3 @@ configuration changes necessary to use each package manager with SlackOnly.
 [3]: https://packages.slackonly.com/pub/packages/14.1-x86_64/
 [4]: https://packages.slackonly.com/pub/packages/14.2-x86/
 [5]: https://packages.slackonly.com/pub/packages/14.2-x86_64/
-[6]: https://packages.slackonly.com/pub/packages/current-x86/
-[7]: https://packages.slackonly.com/pub/packages/current-x86_64/
-[8]: https://packages.slackonly.com/pub/packages/custom-x86_64/
-[9]: https://sourceforge.net/projects/slackpkgplus/files/
-[10]: http://slakfinder.org/slackpkg+/src/README
-[11]: https://github.com/dslackw/slpkg/blob/master/README.rst
-[12]: https://github.com/dslackw/slpkg/releases
-[13]: https://software.jaos.org/#slapt-get
-[14]: https://software.jaos.org/
-[15]: https://software.jaos.org/#gslapt

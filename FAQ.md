@@ -58,6 +58,18 @@ administrator as soon as encountered.
 
 Information for developers can be found in [DEVELOPERS](https://slackonly.com/developers.html).
 
+## Does SlackOnly provide a repository for Slackware-current?
+
+In the past a repository was provided.  It is difficult to provide a
+quality repository for Slackware-current because it is a moving target.
+Often updates to Slackware-current happen on a daily basis and makes it
+very difficult to provide quality packages that will function with
+Slackware-current.  Additionally, there are some packages introduced to
+Slackware that are only available on Slackware-current.  Our upstream,
+SlackBuilds.org, only supports stable Slackware releases for this reason.
+
+In the future support may be reintroduced but presently has been removed.
+
 ## How can you contact the SlackOnly maintainer?
 
 Email is the best way to contact us.  Send all inquiries to:
